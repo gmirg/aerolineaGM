@@ -109,10 +109,12 @@ function checkinAnterior() {
     let vuelosPasReg = JSON.parse(localStorage.getItem("vuelosRegistro"));
     if (vuelosPasReg) {
         let clave = vuelosPasReg.findIndex(element => (element.idVuelo == vuelo));
-        let clave2 = vuelosPasReg[clave].pasajero.findIndex(element => (element.dni === dniPasajero.value));
-        if (clave2 != -1) {
-            alert('Este pasajero ya esta registrado en este vuelo');
-            return false;
+        if (clave != -1) {
+            let clave2 = vuelosPasReg[clave].pasajero.findIndex(element => (element.dni === dniPasajero.value));
+                if (clave2 != -1) {
+                alert('Este pasajero ya esta registrado en este vuelo');
+                return false;
+            }
         }
     }
     return true;
