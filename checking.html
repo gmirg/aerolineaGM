@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proceso de registro en vuelo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a href="home.html"><img src="./img/logopng.png" style="width: 275px;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="historial.html">Historial</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="container">
+        <h1>Check in</h1>
+        <div class="card muestra">
+            <div class="row g-3 text-center">
+                <h2>Confirmación de datos</h2>
+                <p>Por favor revisa y confirma tus datos personales para continuar con el check in</p>
+            </div>
+            <form action="">
+                <div class="row g-3">
+                    <div class="col ms-md-auto">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" name="Nombre" id="nombre" placeholder=""
+                            class="form-control form-control-lg">
+                    </div>
+                    <div class="col ms-md-auto">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" name="Apellidos" id="apellidos" placeholder=""
+                            class="form-control form-control-lg">
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <label for="Documento de identidad" class="form-label">Documento de identidad (formato: X12345678A)</label>
+                    <input type="text" name="documentoIdentidad" id="dni" placeholder=""
+                        class="form-control form-control-lg">
+                </div>
+                <div class="row g-3">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input type="email" name="email" id="email" class="form-control form-control-lg">
+                </div>
+                <div class="row g-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" class="form-control form-control-lg">
+                </div>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <button type="button" class="btn btn-secondary" onclick="confirmacion()">Confirmar datos</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <script src="/js/checking.js"></script>
+</body>
+
+</html>

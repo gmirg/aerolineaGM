@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(46, 46, 92) ;
+}
+.navbar {
+    background-color: #A0A1B6;
+}
+.container {
+    --bs-gutter-x: 0rem;
+    padding: 2% 5%;
+
+}
+.grid {
+    --bs-columns: 3;
+    --bs-rows: 3;
+}
+h1 {
+    color: #fff;
+}
+/* .col, .row {
+    background-color: #fff;
+} */
+.card {
+    margin-top: 15px;
+    padding: 1%;
+}
+.right {
+    text-align: right;
+}
+button {
+    margin: 1% 0;
+}
+.pasillo {
+    height: 10%;
+}
+hr {
+    margin: 0.2rem 0;
+}
+.pasajeros p {
+    margin: .5rem 0;
+}
+button {
+    /* float: right; */
+    font-size: 13px;
+    margin-top: 0;
+}
